@@ -110,6 +110,7 @@ header .auth-nav {
 .site-nav .header-link,
 .site-nav {
     color: var(--primary-text-color);   
+   
 }
 
 .site-nav .header-link:hover,
@@ -128,6 +129,10 @@ header .auth-nav {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    transition-property: background-color ;
+    transition-duration: 250ms;
+    transition-timing-function: linear; 
 }
 
 .auth-nav .item-nav + .item-nav {
@@ -158,6 +163,10 @@ header .auth-nav {
 
 .header-link {
     text-decoration: none;
+
+    transition-property: background-color ;
+    transition-duration: 250ms;
+    transition-timing-function: linear; 
 }
 .site-nav,
 .auth-nav,
@@ -266,6 +275,10 @@ header .auth-nav {
     color: var(--primary-text-color);
     background-color: var(--secondary-fon-col);
     border: none;
+
+    transition-property: background-color ;
+    transition-duration: 250ms;
+    transition-timing-function: linear; 
 }
 
 .button {
@@ -305,18 +318,38 @@ header .auth-nav {
     width: 73px;
     padding-left: 25px;
     padding-right: 25px;
+
+    transition-property: background-color ;
+    transition-duration: 250ms;
+    transition-timing-function: linear; 
 }
 .button-web {
     width: 125px;
+
+    transition-property: background-color ;
+    transition-duration: 250ms;
+    transition-timing-function: linear; 
 }
 .button-adds {
     width: 112px;
+
+    transition-property: background-color ;
+    transition-duration: 250ms;
+    transition-timing-function: linear; 
 }
 .button-dysain {
     width: 103px;
+
+    transition-property: background-color ;
+    transition-duration: 250ms;
+    transition-timing-function: linear; 
 }
 .button-market {
     width: 130px;
+
+    transition-property: background-color ;
+    transition-duration: 250ms;
+    transition-timing-function: linear; 
     
 }
 
@@ -337,6 +370,10 @@ header .auth-nav {
     max-width: 216px;
     max-height: 50px;
     padding: 10px 32px;
+
+    transition-property: background-color ;
+    transition-duration: 250ms;
+    transition-timing-function: linear; 
 
     
 }   
@@ -517,6 +554,10 @@ margin-right: 10px;
     justify-content: center;
     align-items: center;
 
+    transition-property: background-color ;
+    transition-duration: 250ms;
+    transition-timing-function: linear; 
+
 }
 .team-soc-link:focus,
 .team-soc-link:hover {
@@ -582,6 +623,9 @@ margin-right: 10px;
     border-radius: 4px;
     
     align-items: center;
+
+
+    
     }
 
 
@@ -693,10 +737,16 @@ margin-right: 10px;
     background-color:var(--bacjground-color-footer-lincs);
     border-radius: 50%;
 
+    
+
 }
 
 .footer-icon-linc {
     fill: var(--primary-fon-color);
+
+    transition-property: background-color ;
+    transition-duration: 250ms;
+    transition-timing-function: linear; 
 }
 
 
@@ -853,6 +903,10 @@ margin-right: 10px;
     height: 100%;
     text-decoration: none;
     display: inline-block;
+
+    transition-property: background-color ;
+    transition-duration: 250ms;
+    transition-timing-function: linear; 
 }
 
 
