@@ -371,7 +371,9 @@ header .auth-nav {
     max-height: 50px;
     padding: 10px 32px;
 
-
+    transition-property: background-color, color ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     
 }   
@@ -709,7 +711,7 @@ margin-right: 10px;
 
     transition-property: color ;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: linear;
 }
 
 .address-items {
@@ -750,7 +752,7 @@ margin-right: 10px;
 
     transition-property: color ;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+    transition-timing-function: linear; 
 }
 
 
@@ -910,7 +912,7 @@ margin-right: 10px;
 
     transition-property: box-shadow ;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+    transition-timing-function: linear; 
 }
 
 
