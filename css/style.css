@@ -132,7 +132,7 @@ header .auth-nav {
 
     transition-property: background-color ;
     transition-duration: 250ms;
-    transition-timing-function: linear; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .auth-nav .item-nav + .item-nav {
@@ -278,7 +278,7 @@ header .auth-nav {
 
     transition-property: background-color ;
     transition-duration: 250ms;
-    transition-timing-function: linear; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .button {
@@ -321,35 +321,35 @@ header .auth-nav {
 
     transition-property: background-color ;
     transition-duration: 250ms;
-    transition-timing-function: linear; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .button-web {
     width: 125px;
 
     transition-property: background-color ;
     transition-duration: 250ms;
-    transition-timing-function: linear; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .button-adds {
     width: 112px;
 
     transition-property: background-color ;
     transition-duration: 250ms;
-    transition-timing-function: linear; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .button-dysain {
     width: 103px;
 
     transition-property: background-color ;
     transition-duration: 250ms;
-    transition-timing-function: linear; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .button-market {
     width: 130px;
 
     transition-property: background-color ;
     transition-duration: 250ms;
-    transition-timing-function: linear; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
     
 }
 
@@ -371,9 +371,7 @@ header .auth-nav {
     max-height: 50px;
     padding: 10px 32px;
 
-    transition-property: background-color ;
-    transition-duration: 250ms;
-    transition-timing-function: linear; 
+
 
     
 }   
@@ -556,7 +554,7 @@ margin-right: 10px;
 
     transition-property: background-color ;
     transition-duration: 250ms;
-    transition-timing-function: linear; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 
 }
 .team-soc-link:focus,
@@ -711,7 +709,7 @@ margin-right: 10px;
 
     transition-property: color ;
     transition-duration: 250ms;
-    transition-timing-function: linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-items {
@@ -752,7 +750,7 @@ margin-right: 10px;
 
     transition-property: color ;
     transition-duration: 250ms;
-    transition-timing-function: linear; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 
@@ -912,7 +910,7 @@ margin-right: 10px;
 
     transition-property: box-shadow ;
     transition-duration: 250ms;
-    transition-timing-function: linear; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 
