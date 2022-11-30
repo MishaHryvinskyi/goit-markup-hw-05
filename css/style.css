@@ -164,7 +164,7 @@ header .auth-nav {
 .header-link {
     text-decoration: none;
 
-    transition-property: background-color ;
+    transition-property: color ;
     transition-duration: 250ms;
     transition-timing-function: linear; 
 }
@@ -701,11 +701,17 @@ margin-right: 10px;
 .address {
     font-style: normal;
     width: 231px;
+
+     
     
 }
 .address-item {
     color: var(--primary-fon-color);
     text-decoration: none;
+
+    transition-property: color ;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
 }
 
 .address-items {
@@ -744,7 +750,7 @@ margin-right: 10px;
 .footer-icon-linc {
     fill: var(--primary-fon-color);
 
-    transition-property: background-color ;
+    transition-property: color ;
     transition-duration: 250ms;
     transition-timing-function: linear; 
 }
@@ -904,7 +910,7 @@ margin-right: 10px;
     text-decoration: none;
     display: inline-block;
 
-    transition-property: background-color ;
+    transition-property: box-shadow ;
     transition-duration: 250ms;
     transition-timing-function: linear; 
 }
