@@ -140,6 +140,30 @@ header .auth-nav {
 .auth-nav .item-nav + .item-nav {
     margin-left: 50px;
 } 
+
+
+
+.current {
+    position: relative;
+  }
+  .current::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    
+    background: #f38181;
+    transition: width 0.5s, left 0.5s;
+      right:0;
+  }
+  
+  .current:hover::after {
+    width: 100%;
+      left:0;
+     
+  }
+  
 /* ------------Контатки------------*/
 
 .main-nav {
@@ -1027,7 +1051,7 @@ overflow: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
     height: 581px;
     width: 528px;
     background: var(--primary-fon-color);
@@ -1038,7 +1062,7 @@ overflow: hidden;
 
 
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0) rotate(-180deg);
 }
 
 .backdrop.is-hidden {
