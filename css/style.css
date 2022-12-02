@@ -142,27 +142,33 @@ header .auth-nav {
 } 
 
 
-
-.current {
+.item-nav {
     position: relative;
-  }
-  .current::after {
+    display: block;
+}
+
+.item-nav .current::after {
     content: '';
-    width: 0;
-    height: 2px;
-    position: absolute;
-    bottom: -4px;
-    
-    background: #f38181;
-    transition: width 0.5s, left 0.5s;
-      right:0;
-  }
-  
-  .current:hover::after {
     width: 100%;
-      left:0;
-     
-  }
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+    background-color: var(--acent-color);
+
+    
+}
+
+.item-nav:hover::after {
+   
+    transform: scaleX(1);
+   
+}
+
+
+
+
   
 /* ------------Контатки------------*/
 
@@ -177,23 +183,14 @@ header .auth-nav {
 
 
 
-.current::after {
-    position: absolute;
-    content: '';
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: var(--accent-color);
-    border-radius: 2px;
-}
+ 
 
 .auth-nav .header-link:hover,
 .auth-nav .header-link:focus 
 {
     color: var(--acent-color);
     fill: var(--acent-color);
-}
+} 
 
 .site-nav .header-link.current {
     color: var(--acent-color);
@@ -357,35 +354,35 @@ header .auth-nav {
     padding-left: 25px;
     padding-right: 25px;
 
-    transition-property: background-color ;
+    transition-property: background-color, color ;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .button-web {
     width: 125px;
 
-    transition-property: background-color ;
+    transition-property: background-color, color ;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .button-adds {
     width: 112px;
 
-    transition-property: background-color ;
+    transition-property: background-color, color ;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .button-dysain {
     width: 103px;
 
-    transition-property: background-color ;
+    transition-property: background-color, color ;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .button-market {
     width: 130px;
 
-    transition-property: background-color ;
+    transition-property: background-color, color ;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
     
@@ -683,6 +680,7 @@ margin-right: 10px;
 .icon-clients {
     width: 106px;
     height: 60px;  
+    fill: var(--primery-icon-color);
 }
 
 .company {
@@ -703,9 +701,8 @@ margin-right: 10px;
     
     align-items: center;
 
-    transition-property: color ;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     
     }
@@ -716,11 +713,6 @@ margin-right: 10px;
 }
 
 
-.icon-clients {
-    width: 106px;
-    height: 60px;  
-}
-
 
 .client-item:hover {
     border: 1px solid var(--acent-color);
@@ -730,9 +722,7 @@ margin-right: 10px;
     border: 1px solid var(--acent-color);
 }
 
-.icon-clients {
-    fill: var(--primery-icon-color);
-}
+
 
 .client-item:hover .icon-clients {
     fill: var(--acent-color);
@@ -1051,7 +1041,7 @@ overflow: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    transform: translate(-50%, -50%) scale(1);
     height: 581px;
     width: 528px;
     background: var(--primary-fon-color);
@@ -1062,7 +1052,7 @@ overflow: hidden;
 
 
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0) rotate(-180deg);
+    transform: translate(-50%, -50%) scale(0) ;
 }
 
 .backdrop.is-hidden {
