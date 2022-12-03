@@ -142,34 +142,49 @@ header .auth-nav {
 } 
 
 
-.item-nav {
+.navs-item {
     position: relative;
-    display: block;
+    
 }
 
-.item-nav .current::after {
-    content: '';
-    width: 100%;
-    height: 4px;
+.current::after {
     position: absolute;
+    content: '';
     bottom: 0;
     left: 0;
+    width: 100%;
+    height: 4px;
     border-radius: 2px;
     background-color: var(--acent-color);
 
     
 }
 
-.item-nav:hover::after {
-   
-    transform: scaleX(1);
-   
+
+.navs-item.after::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+    background-color: var(--acent-color);
+    transform: scaleX(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
 }
+ 
+.navs-item.after:hover::after {
+    transform: scaleX(1);
+  }
 
-
-
-
-  
+.navs-item:hover::after,
+.navs-item:focus::after
+{
+    display: inline-block;
+}
+      
 /* ------------Контатки------------*/
 
 .main-nav {
@@ -217,26 +232,16 @@ header .auth-nav {
     list-style: none;
 }
 
-.icon-nav1,
+
 .icon-mail {
     margin-right: 10px;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-nav1:hover,
-.icon-nav2:focus {
- fill: var(--acent-color);
-}
 
-.icon-nav1 {
-    width: 16px;
-    height: 12px;
-    fill: var(--secondary-texy-color);
-}
-.icon-nav2 {
-    width: 10px;
-    height: 16px;
-    fill: var(--secondary-texy-color);
-}
+
+
 
 
 .header-link {
@@ -311,9 +316,7 @@ header .auth-nav {
     background-color: var(--secondary-fon-col);
     border: none;
 
-    transition-property: background-color ;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
 .button {
@@ -406,8 +409,9 @@ header .auth-nav {
     max-height: 50px;
     padding: 10px 32px;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color, color ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     
 }   
@@ -629,9 +633,9 @@ margin-right: 10px;
     justify-content: center;
     align-items: center;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-     color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      
+    
 
 
 }
@@ -651,6 +655,7 @@ margin-right: 10px;
 
 .team-soc-icon {
     fill: var(--primery-icon-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ------------Наші клієнти------------*/
@@ -681,6 +686,8 @@ margin-right: 10px;
     width: 106px;
     height: 60px;  
     fill: var(--primery-icon-color);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company {
