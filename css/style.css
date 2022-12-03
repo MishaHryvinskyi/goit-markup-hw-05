@@ -1082,11 +1082,14 @@ overflow: hidden;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    padding: 6px;
 
 } 
 
 .icons-svg-char {
-    
+    width: 18px;
+    height: 18px;
 }
+
 
 
